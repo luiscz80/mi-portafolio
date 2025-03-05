@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis - Portafolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/smooth-scrollbar.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body class="home1-page">
+
+    <video class="body-overlay" muted autoplay loop>
+        <source src="assets/video/video.mp4" type="video/mp4">
+    </video>
+
+    <div class="page-loader">
+        <div class="bounceball"></div>
+    </div>
+
+    <span class="icon-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    <div class="global-color">
+        <span class="setting-toggle">
+            <i class="las la-cog"></i>
+        </span>
+        <div class="inner">
+            <div class="overlay"></div>
+            <div class="global-color-option">
+                <span class="close-settings">
+                    <i class="las la-times"></i>
+                </span>
+                <h2>Configuración</h2>
+                <div class="global-color-option-inner">
+                    <p>Colores</p>
+                    <div class="color-boxed">
+                        <a href="#" class="clr-active" onclick="color1();"></a>
+                        <a href="#" onclick="color2();"></a>
+                        <a href="#" onclick="color3();"></a>
+                        <a href="#" onclick="color4();"></a>
+                        <a href="#" onclick="color5();"></a>
+                        <a href="#" onclick="color6();"></a>
+                        <a href="#" onclick="color7();"></a>
+                        <a href="#" onclick="color8();"></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive-sidebar-menu">
+        <div class="overlay"></div>
+        <div class="sidebar-menu-inner">
+            <div class="menu-wrap">
+                <p>Menu</p>
+                <ul class="menu scroll-nav-responsive d-flex">
+                    <li>
+                        <a class="scroll-to" href="#home">
+                            <i class="las la-home"></i> <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#about">
+                            <i class="lar la-user"></i> <span>Acerca</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#resume">
+                            <i class="las la-briefcase"></i> <span>Resumen</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#ability">
+                            <i class="las la-stream"></i> <span>Habilidades</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#skills">
+                            <i class="las la-shapes"></i> <span>Tecnologías</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#portfolio">
+                            <i class="las la-grip-vertical"></i> <span>Proyectos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#contact">
+                            <i class="las la-envelope"></i> <span>Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-social">
+                <p>Redes Sociales</p>
+                <ul class="social-links d-flex align-items-center">
+                    <li>
+                        <a href="https://www.linkedin.com/in/luis-alberto80/" target="_blank"><i class="lab la-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/luiscz80" target="_blank"><i class="lab la-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <ul class="menu scroll-nav d-flex">
+        <li>
+            <a class="scroll-to" href="#home">
+                <span>Inicio</span> <i class="las la-home"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#about">
+                <span>Acerca</span> <i class="lar la-user"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#resume">
+                <span>Resumen</span> <i class="las la-briefcase"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#ability">
+                <span>Habilidades</span> <i class="las la-stream"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#skills">
+                <span>Tecnologías</span> <i class="las la-shapes"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#portfolio">
+                <span>Proyectos</span> <i class="las la-grip-vertical"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#contact">
+                <span>Contacto</span> <i class="las la-envelope"></i>
+            </a>
+        </li>
+    </ul>
+
+    <div class="left-sidebar">
+        <div class="sidebar-header d-flex align-items-center justify-content-between">
+            <img src="assets/images/logo.png" alt="Logo">
+            <span class="designation">Desarrollador de Software</span>
+        </div>
+        <img class="me" src="assets/images/me.jpg" alt="Me">
+        <span class="theme-btn-work">Disponible para Trabajar</span>
+        <h2 class="email">luis.condori.dev@gmail.com</h2>
+        <h2 class="address">Bolivia, La Paz</h2>
+        <p class="copyright">&copy; 2025 Powered By Luis Alberto</p>
+        <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+            <li>
+                <a href="https://www.linkedin.com/in/luis-alberto80/" target="_blank"><i class="lab la-linkedin"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/luiscz80" target="_blank"><i class="lab la-github"></i></a>
+            </li>
+        </ul>
+        <a href="mailto:luis.condori.dev@gmail.com" class="theme-btn">
+            <i class="las la-envelope"></i> ¡Contáctame!
+        </a>
+    </div>
+
+    <main class="drake-main">
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+                <div class="left-sidebar">
+                    <div class="sidebar-header d-flex align-items-center justify-content-between">
+                        <img src="assets/images/logo.png" alt="Logo">
+                        <span class="designation">Desarrollador de Software</span>
+                    </div>
+                    <img class="me" src="assets/images/me.jpg" alt="Me">
+                    <span class="theme-btn-work">Disponible para Trabajar</span>
+                    <h2 class="email">luis.condori.dev@gmail.com</h2>
+                    <h2 class="address">Bolivia, La Paz</h2>
+                    <p class="copyright">&copy; 2025 Powered By Luis Alberto</p>
+                    <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+                        <li>
+                            <a href="https://www.linkedin.com/in/luis-alberto80/" target="_blank"><i class="lab la-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/luiscz80" target="_blank"><i class="lab la-github"></i></a>
+                        </li>
+                    </ul>
+                    <a href="mailto:luis.condori.dev@gmail.com" class="theme-btn">
+                        <i class="las la-envelope"></i> ¡Contáctame!
+                    </a>
+                </div>
+
+                <section class="hero-section page-section scroll-to-page" id="home">
+
+                    <div class="custom-container">
+                        <div class="hero-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-home"></i> Introducción
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Saludos de <span>Luis</span>, Desarrollador de Software</h1>
+                            </div>
+                            <p class="scroll-animation" data-animation="fade_from_bottom">Desarrollador de software y aplicaciones móviles. Especializado en backend y frontend, con enfoque en innovación, optimización y desarrollo de soluciones escalables.</p>
+                            <a href="#portfolio" 
+                                class="go-to-project-btn scroll-to scroll-animation" 
+                                data-animation="rotate_up">
+                                <img src="assets/images/round-text.png" alt="Rounded text">
+                                <i class="las la-arrow-down"></i>
+                            </a>
+        
+                            <div class="facts d-flex">
+                                <div class="left scroll-animation" data-animation="fade_from_left">
+                                    <h1>6+</h1>
+                                    <p>Años de <br>Experiencia</p>
+                                </div>
+                                <div class="right scroll-animation" data-animation="fade_from_right">
+                                    <h1>50+</h1>
+                                    <p>Proyectos <br> completados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="about-area page-section scroll-to-page" id="about">
+                    <div class="custom-container">
+                        <div class="about-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="lar la-user"></i> Acerca de mi
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Todo gran desarrollo comienza con una
+                                    <span>historia</span></h1>
+                            </div>
+                            <p class="scroll-animation" data-animation="fade_from_bottom">Desde que inicié mi trayectoria como desarrollador de software hace más de 6 años, he trabajado en la creación de sistemas a medida, abarcando backend, frontend y gestión de bases de datos. He colaborado con equipos multidisciplinarios para desarrollar soluciones eficientes y escalables, tanto para empresas como para proyectos personales. Soy una persona analítica y apasionada por la tecnología, en constante aprendizaje para mejorar mis habilidades y crear aplicaciones que aporten valor a los usuarios.</p>
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="resume-area page-section scroll-to-page" id="resume">
+                    <div class="custom-container">
+                        <div class="resume-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-briefcase"></i> Resumen
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Experiencia<span>Laboral</span></h1>
+                            </div>
+        
+                            <div class="resume-timeline">
+                                <div class="item scroll-animation" data-animation="fade_from_right">
+                                    <span class="date">abril - noviembre 2024</span>
+                                    <h2>Técnico en Soporte y Mantenimiento de Equipos Computarizados</h2>
+                                    <p>NOTARÍA DE FE PÚBLICA</p>
+                                </div>
+                                <div class="item scroll-animation" data-animation="fade_from_right">
+                                    <span class="date">agosto 2023 - enero 2024</span>
+                                    <h2>Técnico en Soporte y Mantenimiento de Sistemas</h2>
+                                    <p>MINISTERIO DE DESARROLLO PRODUCTIVO Y ECONOMIA PLURAL</p>
+    
+                                </div>
+                                <div class="item scroll-animation" data-animation="fade_from_right">
+                                    <span class="date">octubre 2022 - febrero 2023</span>
+                                    <h2>Desarrollador de Sistemas Backend y Frontend</h2>
+                                    <p>EMPRESA STRATEGIC BOLIVIA</p>
+                                </div>
+                                <div class="item scroll-animation" data-animation="fade_from_right">
+                                    <span class="date">enero - mayo 2022</span>
+                                    <h2>Desarrollador de Sistemas Informáticos</h2>
+                                    <p>CONSULTORIA KERNEL BOLIVIA</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="ability-area page-section scroll-to-page" id="ability">
+                    <div class="custom-container">
+                        <div class="ability-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-stream"></i> Habilidades
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Mis <span>Habilidades</span></h1>
+                            </div>
+
+                            <div class="ability-items">
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-code"></i>
+                                    <h2>Desarrollo Full Stack</h2>
+                                    <p>Desarrollo de sistemas web con PHP Framework Laravel, CodeIgniter y JavaScript</p>
+                                </div>
+
+                                <div class="service-item scroll-animation" data-animation="fade_from_right">
+                                    <i class="las la-server"></i>
+                                    <h2>APIs RESTful y SDKs</h2>
+                                    <p>Integración con Vimeo, Cloudinary, AWS S3, Mailchimp y más</p>
+                                </div>
+
+                                <div class="service-item scroll-animation" data-animation="fade_from_left">
+                                    <i class="las la-shield-alt"></i>
+                                    <h2>Seguridad Web</h2>
+                                    <p>Implementación de prepared statements (PDO), prevención de SQL Injection, XSS y CSRF</p>
+                                </div>
+
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="lab la-android"></i>
+                                    <h2>Desarrollo Móvil con Flutter</h2>
+                                    <p>Creación de aplicaciones móviles en Flutter/Dart con integración de Firebase y SQLite</p>
+                                </div>
+
+                                <div class="service-item scroll-animation" data-animation="fade_from_right">
+                                    <i class="las la-database"></i>
+                                    <h2>Backend con Node.js y Express</h2>
+                                    <p>Desarrollo de APIs RESTful con Express.js, autenticación JWT y base de datos en MySQL</p>
+                                </div>
+
+                                <div class="service-item scroll-animation" data-animation="fade_from_left">
+                                    <i class="lab la-vuejs"></i>
+                                    <h2>Frontend con Vue.js y Vuetify</h2>
+                                    <p>Creación de interfaces dinámicas con Vue.js, Vuetify y consumo de APIs con Axios</p>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex justify-content-center">
+                                <button class="theme-btn-work show-more-btn">Más Habilidades <i class="las la-angle-down"></i></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="skills-area page-section scroll-to-page" id="skills">
+                    <div class="custom-container">
+                        <div class="skills-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-shapes"></i> Stack Tecnológias
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">Mis <span>Tecnológias</span></h1>
+                            </div>
+        
+                            <div class="row skills text-center">
+                                <div class="row">
+                                    <span class="col-md-4 theme-btn-work">Front-End</span>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_left">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/html.png" alt="HTML">
+                                        </div>
+                                        <p class="name">HTML</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_right">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/css.png" alt="CSS">
+                                        </div>
+                                        <p class="name">CSS</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_top">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/javascript.png" alt="Javascript">
+                                        </div>
+                                        <p class="name">Javascript</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/bootstrap.png" alt="Bootstrap">
+                                        </div>
+                                        <p class="name">Bootstrap</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_left">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/vuejs.png" alt="VueJS 3">
+                                        </div>
+                                        <p class="name">VueJS 3</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_right">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/vuetify.png" alt="Vuetify 3">
+                                        </div>
+                                        <p class="name">Vuetify 3</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/flutter.png" alt="Flutter">
+                                        </div>
+                                        <p class="name">Flutter</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <span class="col-md-4 theme-btn-work">Back-End</span>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_left">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/php.png" alt="PHP">
+                                        </div>
+                                        <p class="name">PHP</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_right">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/laravel.png" alt="Laravel">
+                                        </div>
+                                        <p class="name">Laravel</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_top">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/codeigniter.png" alt="CodeIgniter">
+                                        </div>
+                                        <p class="name">CodeIgniter</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/nodejs.png" alt="NodeJS">
+                                        </div>
+                                        <p class="name">NodeJS</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_left">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/swagger.png" alt="Swagger Doc">
+                                        </div>
+                                        <p class="name">Swagger Doc</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_right">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/dart.png" alt="Dart">
+                                        </div>
+                                        <p class="name">Dart</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_top">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/mysql.png" alt="MySQL">
+                                        </div>
+                                        <p class="name">MySQL</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/postgresql.png" alt="PostgreSQL">
+                                        </div>
+                                        <p class="name">PostgreSQL</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_left">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/apache.png" alt="Apache">
+                                        </div>
+                                        <p class="name">Apache</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <span class="col-md-4 theme-btn-work">Herramientas</span>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_left">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/git.png" alt="Git">
+                                        </div>
+                                        <p class="name">Git</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_right">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/linux.png" alt="Linux">
+                                        </div>
+                                        <p class="name">Linux</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_top">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/vscode.png" alt="VS Code">
+                                        </div>
+                                        <p class="name">VS Code</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="assets/images/stack/postman.png" alt="Postman">
+                                        </div>
+                                        <p class="name">Postman</p>
+                                    </div>
+                                </div>
+
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="portfolio-area page-section scroll-to-page" id="portfolio">
+                    <div class="custom-container">
+                        <div class="portfolio-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-grip-vertical"></i> portafolio
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom"> <span>Proyectos </span>Destacados</h1>
+                            </div>
+        
+                            <div class="row portfolio-items">
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="portfolio-item portfolio-full">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/dashboard/instalacion.png" data-lightbox="example-1">
+                                                <img src="assets/images/dashboard/instalacion.png" alt="Sistema - Dashboard Dinámico">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a>PHP v8.3</a>
+                                                </li>
+                                                <li>
+                                                    <a>Bootstrap v5.2</a>
+                                                </li>
+                                                <li>
+                                                    <a>AdminLTE v3.1</a>
+                                                </li>
+                                                <li>
+                                                    <a>Chart JS</a>
+                                                </li>
+                                                <li>
+                                                    <a>Select2</a>
+                                                </li>
+                                                 <li>
+                                                    <a>Notie</a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <h2><a href="https://youtu.be/P1ZPtxYVO9o?si=4Ftz4eD_EjAroOHr" target="_blank">Sistema - Dashboard Dinámico</a></h2>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_left">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/fms/inicio.png" data-lightbox="example-2">
+                                                <img src="assets/images/fms/inicio.png" alt="Sistema - Gestor de Archivos">
+                                            </a>
+
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a>PHP v8.3</a>
+                                                </li>
+                                                <li>
+                                                    <a>Bootstrap v5</a>
+                                                </li>
+                                                <li>
+                                                    <a>Cloudinary</a>
+                                                </li>
+                                                <li>
+                                                    <a>AWS S3</a>
+                                                </li>
+                                                <li>
+                                                    <a>Vimeo</a>
+                                                </li>
+                                                 <li>
+                                                    <a>Mailchimp</a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <h2><a href="https://youtu.be/YLk3T5teh_Y?si=O7r2QsBA2PoIPnUc" target="_blank">Sistema - Gestor de Archivos</a></h2>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_right">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/builder/landings.png" data-lightbox="example-3">
+                                                <img src="assets/images/builder/landings.png" alt="Sistema - Landing Page Builder">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a>PHP v8.3</a>
+                                                </li>
+                                                <li>
+                                                    <a>Bootstrap v5</a>
+                                                </li>
+                                                <li>
+                                                    <a>CodeMirror</a>
+                                                </li>
+                                                <li>
+                                                    <a>Notie</a>
+                                                </li>
+                                                <li>
+                                                    <a>Toastr</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="https://youtu.be/YJPzgcj320Y?si=KDiHilUaAORkf0WE" target="_blank">Sistema - Landing Page Builder</a></h2>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/registro/login1.jpg" data-lightbox="example-4">
+                                                <img src="assets/images/registro/login1.jpg" alt="Sistema - Gestión y Registro de Usuarios">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a>NodeJS v16.20</a>
+                                                <li>
+                                                    <a>VueJS 3</a>
+                                                </li>
+                                                <li>
+                                                    <a>Vuetify 3</a>
+                                                </li>
+                                                <li>
+                                                    <a>Google Analytics</a>
+                                                </li>
+                                                <li>
+                                                    <a>Leaflet</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="https://youtu.be/CP_NyTHZbPY?si=wNwbM1PxgA_aApjY" target="_blank">Sistema - Gestión y Registro de Usuarios</a></h2>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_left">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/gastos/inicio-gastos.png" data-lightbox="example-5">
+                                                <img src="assets/images/gastos/inicio-gastos.png" alt="Aplicación Móvil - Control de Gastos">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a>Flutter v3.27</a>
+                                                <li>
+                                                    <a>Dart v3.6</a>
+                                                </li>
+                                                <li>
+                                                    <a>Provider</a>
+                                                </li>
+                                                <li>
+                                                    <a>SQFlite</a>
+                                                </li>
+                                                <li>
+                                                    <a>Local Auth</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="#">Aplicación Móvil - Control de Gastos</a></h2>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_right">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/tecno/tecno.png" data-lightbox="example-6">
+                                                <img src="assets/images/tecno/tecno.png" alt="Sistema - Blog para Publicar Información">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a>PHP v8.3</a>
+                                                </li>
+                                                <li>
+                                                    <a>Bootstrap v4.6</a>
+                                                </li>
+                                                <li>
+                                                    <a>Google Analytics</a>
+                                                </li>
+                                                <li>
+                                                    <a>Facebook Pixel</a>
+                                                </li>
+                                                <li>
+                                                    <a>Google Tag Manager</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="https://youtu.be/shC-B24HnXw?si=E6AGWtrI3VM2Nqr_" target="_blank">Sistema - Blog para Publicar Información</a></h2>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_right">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="assets/images/marketplace/marketplace-home.png" data-lightbox="example-7">
+                                                <img src="assets/images/marketplace/marketplace-home.png" alt="Sistema - Marketplace">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a>PHP v7.3</a>
+                                                </li>
+                                                <li>
+                                                    <a>Bootstrap v4.4</a>
+                                                </li>
+                                                <li>
+                                                    <a>Summernote</a>
+                                                </li>
+                                                <li>
+                                                    <a>Dropzone</a>
+                                                </li>
+                                                <li>
+                                                    <a>DataTables</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="#">Sistema - Marketplace</a></h2>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex justify-content-center">
+                                <button class="theme-btn-work show-more-btn">Más Proyectos<i class="las la-angle-down"></i></button>
+                            </div>
+        
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="services-area page-section scroll-to-page" id="services">
+                    <div class="custom-container">
+                        <div class="services-content content-width mb-5 mb-lg-0">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-tools"></i> Servicios
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">¿Qué puedo <span>hacer?</span></h1>
+                            </div>
+
+                            <div class="services-table-items">
+                                <div class="row">
+                                    <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
+                                        <div class="services-table">
+                                            <div class="services-table-header">
+                                                <h4>Desarrollo de Páginas Web y Software</h4>
+                                            </div>
+                                            <ul class="feature-lists">
+                                                <li>Desarrollo con **Laravel, CodeIgniter, PHP, MySQL, PostgreSQL**</li>
+                                                <li>Frontend con **Vue.js 3, Vuetify 3, PrimeVue, JavaScript, Bootstrap 5, AdminLTE**</li>
+                                                <li>Integración con **APIs y servicios externos (Cloudinary, AWS S3, Vimeo, Mailchimp, etc.)**</li>
+                                                <li>Implementación en servidores Linux (Apache)</li>
+                                                <li>Optimización y seguridad en bases de datos **MySQL, PostgreSQL**</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
+                                        <div class="services-table">
+                                            <div class="services-table-header">
+                                                <h4>Soporte Técnico y Administración de Sistemas</h4>
+                                            </div>
+                                            <ul class="feature-lists">
+                                                <li>Mantenimiento y optimización de servidores **Linux**</li>
+                                                <li>Gestión de hosting, dominios y bases de datos</li>
+                                                <li>Implementación de medidas de seguridad y backups</li>
+                                                <li>Solución de problemas y asistencia técnica remota</li>
+                                                <li>Actualización y monitoreo de sistemas</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-area page-section scroll-to-page" id="contact">
+                    <div class="custom-container">
+                        <div class="contact-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_right">
+                                    <i class="las la-envelope"></i> contacto
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">¡Contáctame para <span>Trabajar!</span></h1>
+                            </div>
+                            <h3 class="scroll-animation" data-animation="fade_from_bottom">luis.condori.dev@gmail.com<br> condori.luis.dev@gmail.com</h3>
+                            
+                            <div class="contact-form scroll-animation" data-animation="fade_from_bottom">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-group">
+                                            <label for="full-name">Nombre Completo <sup>*</sup></label>
+                                            <input type="text" name="full-name" id="full-name" placeholder="Luis Alberto Condori Zapana" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group">
+                                            <label for="phone-number">WhatsApp <sup>*</sup></label>
+                                            <input type="text" name="phone-number" id="phone-number" placeholder="+591 73247035" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="input-group submit-btn-wrap">
+                                            <a href="mailto:luis.condori.dev@gmail.com" class="theme-btn">
+                                                Contactar
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/color.js"></script>
+    
+</body>
+
+</html>
